@@ -118,14 +118,14 @@ class CircuitAnimation {
         const ctx = this.ctx;
         ctx.clearRect(0, 0, this.W, this.H);
 
-        // Draw trace paths (very faint backbone)
+        // Draw trace paths (light-theme: subtle deep-blue lines on white)
         this.traces.forEach(trace => {
             ctx.beginPath();
             ctx.moveTo(trace.points[0].x, trace.points[0].y);
             for (let i = 1; i < trace.points.length; i++) {
                 ctx.lineTo(trace.points[i].x, trace.points[i].y);
             }
-            ctx.strokeStyle = 'rgba(77, 142, 255, 0.07)';
+            ctx.strokeStyle = 'rgba(30, 96, 213, 0.10)';
             ctx.lineWidth   = 1;
             ctx.stroke();
 
@@ -134,13 +134,13 @@ class CircuitAnimation {
                 if (idx > 0 && idx < trace.points.length - 1) {
                     ctx.beginPath();
                     ctx.arc(pt.x, pt.y, 2.5, 0, Math.PI * 2);
-                    ctx.fillStyle = 'rgba(77, 142, 255, 0.14)';
+                    ctx.fillStyle = 'rgba(30, 96, 213, 0.20)';
                     ctx.fill();
                 }
             });
         });
 
-        // Update & draw particles
+        // Update & draw particles (light-theme: deep blue on white)
         this.particles.forEach(p => {
             p.progress += p.speed;
             if (p.progress > 1) p.progress = 0;
@@ -152,30 +152,30 @@ class CircuitAnimation {
             // Trail
             if (p.trail.length > 1) {
                 for (let i = 1; i < p.trail.length; i++) {
-                    const alpha = (i / p.trail.length) * 0.45 * p.alpha;
+                    const alpha = (i / p.trail.length) * 0.35 * p.alpha;
                     ctx.beginPath();
                     ctx.moveTo(p.trail[i - 1].x, p.trail[i - 1].y);
                     ctx.lineTo(p.trail[i].x,     p.trail[i].y);
-                    ctx.strokeStyle = `rgba(77, 142, 255, ${alpha})`;
+                    ctx.strokeStyle = `rgba(30, 96, 213, ${alpha})`;
                     ctx.lineWidth   = p.size * 0.7;
                     ctx.stroke();
                 }
             }
 
-            // Outer glow
+            // Outer glow (soft blue halo on white)
             const grd = ctx.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, p.size * 5);
-            grd.addColorStop(0,   `rgba(77, 142, 255, ${0.55 * p.alpha})`);
-            grd.addColorStop(0.5, `rgba(77, 142, 255, ${0.12 * p.alpha})`);
-            grd.addColorStop(1,   'rgba(77, 142, 255, 0)');
+            grd.addColorStop(0,   `rgba(30, 96, 213, ${0.30 * p.alpha})`);
+            grd.addColorStop(0.5, `rgba(30, 96, 213, ${0.08 * p.alpha})`);
+            grd.addColorStop(1,   'rgba(30, 96, 213, 0)');
             ctx.beginPath();
             ctx.arc(pos.x, pos.y, p.size * 5, 0, Math.PI * 2);
             ctx.fillStyle = grd;
             ctx.fill();
 
-            // Core dot
+            // Core dot — solid deep blue
             ctx.beginPath();
             ctx.arc(pos.x, pos.y, p.size, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(180, 210, 255, ${p.alpha})`;
+            ctx.fillStyle = `rgba(20, 72, 200, ${p.alpha})`;
             ctx.fill();
         });
 
