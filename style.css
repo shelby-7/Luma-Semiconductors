@@ -229,10 +229,8 @@ button { cursor: pointer; border: none; background: none; }
     font-size: 9px;
     letter-spacing: 0.14em;
     color: var(--text-dim);
-    border-left: 1px solid var(--border-light);
-    padding-left: 10px;
-    margin-left: 2px;
     line-height: 1;
+    padding-left: 4px;
 }
 
 /* Nav links */
