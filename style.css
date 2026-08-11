@@ -226,8 +226,9 @@ button { cursor: pointer; border: none; background: none; }
 
 .logo-semi {
     font-family: var(--font-display);
-    font-size: 9px;
-    letter-spacing: 0.14em;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
     color: var(--text-dim);
     line-height: 1;
     padding-left: 4px;
