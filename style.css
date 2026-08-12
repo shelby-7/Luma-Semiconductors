@@ -1151,7 +1151,7 @@ button { cursor: pointer; border: none; background: none; }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -1165,7 +1165,6 @@ button { cursor: pointer; border: none; background: none; }
 
 .contact-cell-mid {
     border-left: 1px solid var(--border);
-    border-right: 1px solid var(--border);
 }
 
 .contact-cell-right {
