@@ -27,10 +27,8 @@
                 <span class="logo-semi">SEMICONDUCTOR</span>
             </a>
             <ul class="nav-links" id="nav-links" role="list">
-                <li><a href="#technology" class="nav-link">Technology</a></li>
-                <li><a href="#architecture" class="nav-link">Architecture</a></li>
-
-                <li><a href="#contact" class="nav-link nav-cta" id="nav-contact-btn">Get in touch</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link nav-cta" id="nav-contact-btn">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
@@ -68,13 +66,12 @@
             </p>
 
             <div class="hero-actions reveal-fade" data-delay="700">
-                <a href="#contact" class="btn btn-primary" id="hero-cta-btn">
+                <a href="mailto:contact@luma-semi.com" class="btn btn-primary" id="hero-cta-btn">
                     Get in touch
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                         <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
-                <a href="#technology" class="btn btn-ghost" id="hero-explore-btn">Explore the tech</a>
             </div>
         </div>
 
@@ -91,304 +88,21 @@
     </section>
 
     <!-- ============================================================
-         01 — THE PROBLEM
+         ABOUT
     ============================================================ -->
-    <section id="problem" class="section" aria-labelledby="problem-heading">
+    <section id="about" class="section" aria-labelledby="about-heading">
         <div class="container">
             <div class="section-label fade-up">
-                <span class="label-num mono">01</span>
                 <span class="label-divider" aria-hidden="true"></span>
-                <span class="label-text mono">THE BOTTLENECK</span>
+                <span class="label-text mono">ABOUT LUMA</span>
             </div>
 
-            <div class="problem-grid">
-                <div class="problem-left fade-up" style="--delay: 0.1s">
-                    <h2 class="section-title" id="problem-heading">
-                        GPU compute doubles.<br/>Interconnect doesn't.
+            <div class="problem-single fade-up" style="--delay: 0.1s">
+                    <h2 class="section-title" id="about-heading">
+                        GPU interconnect IP for AI datacenter scale-up.
                     </h2>
                     <p class="body-text">Luma Semiconductor builds GPU interconnect IP for AI datacenter scale-up. Our core work is RTL-level design and verification of multi-GPU communication fabric, validated through FPGA synthesis, not simulation alone.</p>
                     <p class="body-text muted">We combine this with RTL-based traffic modeling and prediction to make interconnect scheduling AI-aware, targeting lower latency and better bandwidth utilization under real inference and training workloads.</p>
-                </div>
-
-                <div class="problem-right fade-up" style="--delay: 0.2s">
-                    <div class="gap-chart" id="gap-chart" aria-label="Scaling comparison chart">
-                        <div class="chart-header mono">SCALING COMPARISON &nbsp;·&nbsp; 5-YEAR TREND</div>
-                        <div class="chart-rows">
-                            <div class="chart-row">
-                                <div class="chart-row-label mono">GPU COMPUTE</div>
-                                <div class="chart-track">
-                                    <div class="chart-bar bar-compute" data-width="92" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="chart-val mono accent">~5.0×</div>
-                            </div>
-                            <div class="chart-row">
-                                <div class="chart-row-label mono">INTERCONNECT BW</div>
-                                <div class="chart-track">
-                                    <div class="chart-bar bar-bw" data-width="36" role="progressbar" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="chart-val mono muted">~1.8×</div>
-                            </div>
-                        </div>
-                        <div class="gap-callout">
-                            <span class="gap-line-vis" aria-hidden="true"></span>
-                            <span class="gap-text mono">2.8× GAP — the problem we solve</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================
-         02 — TECHNOLOGY
-    ============================================================ -->
-    <section id="technology" class="section section-alt" aria-labelledby="technology-heading">
-        <div class="container">
-            <div class="section-label fade-up">
-                <span class="label-num mono">02</span>
-                <span class="label-divider" aria-hidden="true"></span>
-                <span class="label-text mono">WHAT WE BUILD</span>
-            </div>
-
-            <h2 class="section-title fade-up" id="technology-heading">
-                Intelligent fabrics.<br/>GPU-to-GPU bandwidth,<br/><span class="accent">tuned by AI.</span>
-            </h2>
-
-            <div class="tech-grid">
-                <!-- Card 01 -->
-                <article class="tech-card fade-up" style="--delay: 0.1s" id="tech-card-rtl" aria-labelledby="card-title-rtl">
-                    <div class="card-header">
-                        <span class="card-num mono">01</span>
-                        <div class="card-icon" aria-hidden="true">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="2" y="10" width="13" height="9" rx="2" stroke="#4D8EFF" stroke-width="1.5"/>
-                                <rect x="21" y="10" width="13" height="9" rx="2" stroke="#4D8EFF" stroke-width="1.5"/>
-                                <line x1="15" y1="14.5" x2="21" y2="14.5" stroke="#4D8EFF" stroke-width="1.5"/>
-                                <circle cx="18" cy="14.5" r="2" fill="#4D8EFF"/>
-                                <rect x="12" y="22" width="12" height="9" rx="2" stroke="#4D8EFF" stroke-width="1.5" opacity="0.45"/>
-                                <line x1="18" y1="19" x2="18" y2="22" stroke="#4D8EFF" stroke-width="1.5" stroke-dasharray="2 1.5"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="card-title" id="card-title-rtl">RTL Interconnect IP</h3>
-                    <p class="card-body">CHI and XGMI protocol stacks designed at register-transfer level. Multi-GPU communication fabric engineered for scale, not retrofitted from legacy designs.</p>
-                    <div class="card-tags" aria-label="Technologies">
-                        <span class="tag mono">CHI</span>
-                        <span class="tag mono">XGMI</span>
-                        <span class="tag mono">RTL</span>
-                        <span class="tag mono">Verilog</span>
-                    </div>
-                    <div class="card-glow" aria-hidden="true"></div>
-                </article>
-
-                <!-- Card 02 -->
-                <article class="tech-card fade-up" style="--delay: 0.2s" id="tech-card-ai" aria-labelledby="card-title-ai">
-                    <div class="card-header">
-                        <span class="card-num mono">02</span>
-                        <div class="card-icon" aria-hidden="true">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <circle cx="18" cy="18" r="7" stroke="#4D8EFF" stroke-width="1.5"/>
-                                <circle cx="18" cy="18" r="2.5" fill="#4D8EFF"/>
-                                <path d="M18 4 C10 4 4 11 4 18" stroke="#4D8EFF" stroke-width="1.5" stroke-dasharray="3 2.5"/>
-                                <path d="M18 32 C26 32 32 25 32 18" stroke="#4D8EFF" stroke-width="1.5" stroke-dasharray="3 2.5"/>
-                                <circle cx="18" cy="4" r="2" fill="#4D8EFF" opacity="0.7"/>
-                                <circle cx="18" cy="32" r="2" fill="#4D8EFF" opacity="0.7"/>
-                                <circle cx="4" cy="18" r="2" fill="#4D8EFF" opacity="0.4"/>
-                                <circle cx="32" cy="18" r="2" fill="#4D8EFF" opacity="0.4"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="card-title" id="card-title-ai">AI-Aware Scheduling</h3>
-                    <p class="card-body">RTL-based traffic modeling and prediction to make interconnect scheduling AI-aware. Dynamic bandwidth allocation targeting lower latency and better utilization under real inference and training workloads.</p>
-                    <div class="card-tags" aria-label="Technologies">
-                        <span class="tag mono">RTL</span>
-                        <span class="tag mono">Traffic Modeling</span>
-                        <span class="tag mono">Scheduling</span>
-                        <span class="tag mono">Prediction</span>
-                    </div>
-                    <div class="card-glow" aria-hidden="true"></div>
-                </article>
-
-                <!-- Card 03 -->
-                <article class="tech-card fade-up" style="--delay: 0.3s" id="tech-card-hw" aria-labelledby="card-title-hw">
-                    <div class="card-header">
-                        <span class="card-num mono">03</span>
-                        <div class="card-icon" aria-hidden="true">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="4" y="4" width="28" height="28" rx="3" stroke="#4D8EFF" stroke-width="1.5"/>
-                                <rect x="9" y="9" width="8" height="8" rx="1.5" stroke="#4D8EFF" stroke-width="1.5"/>
-                                <rect x="19" y="9" width="8" height="8" rx="1.5" stroke="#4D8EFF" stroke-width="1.5"/>
-                                <rect x="9" y="19" width="8" height="8" rx="1.5" stroke="#4D8EFF" stroke-width="1.5"/>
-                                <rect x="19" y="19" width="8" height="8" rx="1.5" fill="#4D8EFF" opacity="0.2" stroke="#4D8EFF" stroke-width="1.5"/>
-                                <circle cx="23" cy="23" r="2" fill="#4D8EFF"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="card-title" id="card-title-hw">Hardware Validation</h3>
-                    <p class="card-body">FPGA synthesis and benchmarking on Xilinx Kintex UltraScale+. Every architecture decision backed by real silicon behavior, not simulation alone.</p>
-                    <div class="card-tags" aria-label="Technologies">
-                        <span class="tag mono">FPGA</span>
-                        <span class="tag mono">UltraScale+</span>
-                        <span class="tag mono">Synthesis</span>
-                        <span class="tag mono">STA</span>
-                    </div>
-                    <div class="card-glow" aria-hidden="true"></div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================
-         03 — ARCHITECTURE
-    ============================================================ -->
-    <section id="architecture" class="section" aria-labelledby="architecture-heading">
-        <div class="container">
-            <div class="section-label fade-up">
-                <span class="label-num mono">03</span>
-                <span class="label-divider" aria-hidden="true"></span>
-                <span class="label-text mono">ARCHITECTURE</span>
-            </div>
-
-            <h2 class="section-title fade-up" id="architecture-heading">
-                From silicon <span class="accent">to scale.</span>
-            </h2>
-            <p class="section-sub fade-up" style="--delay: 0.1s">
-                A unified stack, from protocol to fabric to AI scheduler,<br class="hero-br"/>designed to operate as licensable IP.
-            </p>
-
-            <div class="arch-diagram fade-up" id="arch-diagram" style="--delay: 0.2s" aria-label="Architecture diagram">
-
-                <div class="arch-row arch-top">
-                    <div class="arch-node" id="arch-gpu0" aria-label="GPU 0 compute node">
-                        <div class="node-inner">
-                            <div class="node-icon" aria-hidden="true">⬡</div>
-                            <div class="node-label mono">GPU 0</div>
-                            <div class="node-sub mono">Compute Node</div>
-                        </div>
-                    </div>
-                    <div class="arch-node" id="arch-gpu1" aria-label="GPU 1 compute node">
-                        <div class="node-inner">
-                            <div class="node-icon" aria-hidden="true">⬡</div>
-                            <div class="node-label mono">GPU 1</div>
-                            <div class="node-sub mono">Compute Node</div>
-                        </div>
-                    </div>
-                    <div class="arch-node arch-node-faded" id="arch-gpun" aria-label="GPU N compute node">
-                        <div class="node-inner">
-                            <div class="node-icon" aria-hidden="true">⬡</div>
-                            <div class="node-label mono">GPU N</div>
-                            <div class="node-sub mono">Compute Node</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="arch-connectors arch-connectors-top" aria-hidden="true">
-                    <div class="conn-group">
-                        <div class="conn-vert conn-down" id="cv1"></div>
-                        <div class="conn-vert conn-down" id="cv2"></div>
-                        <div class="conn-vert conn-down conn-faded" id="cv3"></div>
-                    </div>
-                    <div class="conn-proto-label mono" aria-hidden="true">CHI &nbsp;/&nbsp; XGMI</div>
-                </div>
-
-                <div class="arch-row arch-mid">
-                    <div class="arch-node arch-node-core" id="arch-fabric" aria-label="Luma Fabric IP interconnect core">
-                        <div class="node-inner">
-                            <svg class="node-logo-icon" width="20" height="20" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                                <polygon points="14,2 26,9 26,19 14,26 2,19 2,9" stroke="#4D8EFF" stroke-width="1.5" fill="none"/>
-                                <polygon points="14,7 21,11 21,17 14,21 7,17 7,11" fill="#4D8EFF" opacity="0.3"/>
-                                <circle cx="14" cy="14" r="3" fill="#4D8EFF"/>
-                            </svg>
-                            <div class="node-label mono">LUMA FABRIC IP</div>
-                            <div class="node-sub mono">Interconnect Core</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="arch-connectors arch-connectors-bottom" aria-hidden="true">
-                    <div class="conn-group conn-group-bot">
-                        <div class="conn-vert conn-down" id="cv4"></div>
-                        <div class="conn-vert conn-down" id="cv5"></div>
-                        <div class="conn-vert conn-down" id="cv6"></div>
-                    </div>
-                    <div class="conn-proto-label mono" aria-hidden="true">Telemetry &nbsp;+&nbsp; Control</div>
-                </div>
-
-                <div class="arch-row arch-bottom">
-                    <div class="arch-node arch-node-sm" id="arch-npu" aria-label="NPU Scheduler AI-driven node">
-                        <div class="node-inner">
-                            <div class="node-label mono">NPU Scheduler</div>
-                            <div class="node-sub mono">AI-Driven</div>
-                        </div>
-                    </div>
-                    <div class="arch-node arch-node-sm" id="arch-systemc" aria-label="SystemC Model traffic simulation node">
-                        <div class="node-inner">
-                            <div class="node-label mono">SystemC Model</div>
-                            <div class="node-sub mono">Traffic Sim</div>
-                        </div>
-                    </div>
-                    <div class="arch-node arch-node-sm" id="arch-proto" aria-label="Protocol Stack CHI and XGMI node">
-                        <div class="node-inner">
-                            <div class="node-label mono">Protocol Stack</div>
-                            <div class="node-sub mono">CHI &nbsp;·&nbsp; XGMI</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ============================================================
-         05 — IP / PRODUCT
-    ============================================================ -->
-    <section id="product" class="section" aria-labelledby="product-heading">
-        <div class="container">
-            <div class="section-label fade-up">
-                <span class="label-num mono">05</span>
-                <span class="label-divider" aria-hidden="true"></span>
-                <span class="label-text mono">WHAT WE OFFER</span>
-            </div>
-
-            <div class="product-grid fade-up">
-                <div class="product-left">
-                    <h2 class="section-title" id="product-heading">
-                        Licensable IP.<br/><span class="accent">Ready to integrate.</span>
-                    </h2>
-                    <p class="body-text">We are building toward licensable interconnect IP and reference implementations that datacenter and accelerator companies can integrate directly, without rebuilding the fabric from scratch.</p>
-                    <a href="#contact" class="btn btn-primary btn-sm" id="product-cta-btn">Discuss licensing →</a>
-                </div>
-
-                <div class="product-right" role="list" aria-label="Product offerings">
-                    <div class="ip-item" role="listitem" id="ip-item-1">
-                        <div class="ip-arrow accent" aria-hidden="true">→</div>
-                        <div>
-                            <div class="ip-title">Interconnect IP Core</div>
-                            <div class="ip-sub mono muted">Drop-in fabric for multi-GPU datacenter nodes</div>
-                        </div>
-                    </div>
-                    <div class="ip-item" role="listitem" id="ip-item-2">
-                        <div class="ip-arrow accent" aria-hidden="true">→</div>
-                        <div>
-                            <div class="ip-title">Reference Implementation</div>
-                            <div class="ip-sub mono muted">Validated RTL + complete verification testbench suite</div>
-                        </div>
-                    </div>
-                    <div class="ip-item" role="listitem" id="ip-item-3">
-                        <div class="ip-arrow accent" aria-hidden="true">→</div>
-                        <div>
-                            <div class="ip-title">AI Scheduler Module</div>
-                            <div class="ip-sub mono muted">NPU-driven traffic management, pre-trained on AI workloads</div>
-                        </div>
-                    </div>
-                    <div class="ip-item" role="listitem" id="ip-item-4">
-                        <div class="ip-arrow accent" aria-hidden="true">→</div>
-                        <div>
-                            <div class="ip-title">Custom Engagements</div>
-                            <div class="ip-sub mono muted">Co-designed fabric integration for bespoke accelerator architectures</div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
