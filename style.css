@@ -1189,12 +1189,25 @@ button { cursor: pointer; border: none; background: none; }
     font-weight: 700;
     color: var(--text);
     letter-spacing: -0.02em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     transition: color 0.2s;
     word-break: break-all;
 }
 
 .contact-email:hover { color: var(--accent); }
+
+.contact-phone {
+    display: block;
+    font-family: var(--font-display);
+    font-size: clamp(15px, 1.6vw, 19px);
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+}
+
+.contact-phone:hover { color: var(--accent); }
 
 .contact-note {
     font-size: 14px;
