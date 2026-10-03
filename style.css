@@ -539,11 +539,8 @@ button { cursor: pointer; border: none; background: none; }
 /* ----------------------------------------------------------------
    8. PROBLEM SECTION
    ---------------------------------------------------------------- */
-.problem-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
+.problem-single {
+    max-width: 800px;
 }
 
 .problem-left .section-title {
